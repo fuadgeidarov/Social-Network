@@ -1,0 +1,14 @@
+.header {
+    grid-area: h;
+    background-color: #792bb7;
+}
+.header img {
+    width: 50px;
+    border-radius: 15px;
+    margin-bottom: -30px;
+}
+.social {
+    text-align: center;
+    color: white ;
+    height: 10px;
+}

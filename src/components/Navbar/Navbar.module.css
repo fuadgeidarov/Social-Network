@@ -1,0 +1,26 @@
+.nav {
+    grid-area: n;
+    background-color: #f3f3f3;
+    padding: 20px;
+}
+
+
+
+.item a {
+    color: #792bb7;
+    text-decoration: none;
+}
+
+.item a:global.active{
+    color: #e73ce4;
+}
+
+.item a:hover{
+    color: #070707;
+}
+
+.friends {
+    color: #792bb7;
+    margin-top: 150px;
+
+}

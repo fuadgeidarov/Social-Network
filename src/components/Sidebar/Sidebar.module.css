@@ -1,0 +1,27 @@
+
+.block{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #ffffff;
+    width: 100px;
+}
+
+.name{
+  color: #9039bf;
+   text-align: center;
+}
+
+.name:hover{
+    color: #070707;
+}
+
+
+.ava {
+  width: 50px;
+
+}
+
+.ava:hover {
+    scale: 1.2;
+}
