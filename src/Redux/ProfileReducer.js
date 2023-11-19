@@ -1,15 +1,17 @@
 import React from 'react';
+import {usersApi} from "../Api/Api";
 const addPost = 'ADD-POST';
-const updateNewPostText = 'UPDATE-NEW-POST-TEXT';
 const SET_USER_PROFILE = 'SET_USER_PROFILE'
+const SET_STATUS ='SET_STATUS'
+const DELETE_POST= 'DELETE_POST'
 
 let initialState = {
        postData: [{id: 1, message: 'Hi, how are you?', likesCount: 15, name: 'John'},
-                {id: 2, message: 'its my first post.', likesCount: 10, name: 'Umar'},
-                {id: 3, message: 'MashsAllah!I like this day!', likesCount: 25, name: 'Aisha'},],
+                {id: 2, message: 'its my first post.', likesCount: 10, name: 'Andrey'},
+                {id: 3, message: 'I like this day!', likesCount: 25, name: 'Mariya'},],
 
-       newPostText: '',
-       profile: null
+       profile: null,
+       status:''
         }
 
  const ProfileReducer = (state = initialState, action)=> {
@@ -17,19 +19,14 @@ let initialState = {
          case addPost: {
              let newPost = {
                  id: 5,
-                 message: state.newPostText,
-                 likesCount: 0,
-                 name: 'Mahmud'
+                 message: action.newPostText,
+                 likesCount: 100,
+                 name: 'frontDev93'
              };
              let stateCopy = {...state}
              stateCopy.postData = [...state.postData]
              stateCopy.postData.push(newPost)
              stateCopy.newPostText = ''
-             return stateCopy;
-         }
-         case updateNewPostText: {
-             let stateCopy = {...state}
-             stateCopy.newPostText = action.newText;
              return stateCopy;
          }
          case SET_USER_PROFILE: {
@@ -44,18 +41,17 @@ let initialState = {
 
 };
 
-export const addPostActionCreator = ()=> {
+export const addPostActionCreator = (newPostText)=> {
 
     return {
-        type: addPost
+        type: addPost,
+        newPostText
     }
 }
 
-export const updateNewPostTextActionCreator = (text)=> {
 
-    return {
-        type: updateNewPostText,newText: text
-    }
-}
 export const setUserProfile = (profile) => ({type: SET_USER_PROFILE, profile})
+export const setStatus = (status) => ({type:SET_STATUS, status})
+export const deletePost = (postId) => ({type:DELETE_POST, postId})
 export default ProfileReducer;
+

@@ -10,7 +10,7 @@ let store = {
             postData: [
                 {id: 1, message: 'Hi, how are you?', likesCount: 15, name: 'John'},
                 {id: 2, message: 'its my first post.', likesCount: 10, name: 'Umar'},
-                {id: 3, message: 'MashsAllah!I like this day!', likesCount: 25, name: 'Aisha'},],
+                {id: 3, message: 'I like this day!', likesCount: 25, name: 'Mariya'},],
 
             newPostText: '',
 
@@ -23,7 +23,7 @@ let store = {
                 {id: 3, message: 'Assalamu Aleykum!'},-
                 {id: 4, message: 'Can You help me?!'},
                 {id: 5, message: 'What are you do?'},
-                {id: 6, message: 'Alhamdullilah! I m fine!'},
+                {id: 6, message: 'Hello! I m fine!'},
             ],
             newMessageText: '',
 
@@ -31,17 +31,17 @@ let store = {
             dialogsData: [
                 {id: 1, name: 'Dmitriy'},
                 {id: 2, name: 'John'},
-                {id: 3, name: 'Ahmad'},
+                {id: 3, name: 'Andrey'},
                 {id: 4, name: 'Umar'},
                 {id: 5, name: 'Svetlana'},
-                {id: 6, name: 'Aisha'}],
+                {id: 6, name: 'Mariya'}],
         },
 
         sideBar: {
             friends: [
                 {id: 1, name: 'Svetlana'},
-                {id: 2, name: 'Ahmad'},
-                {id: 3, name: 'Aisha'},
+                {id: 2, name: 'Andrey'},
+                {id: 3, name: 'Mariya'},
                 {id: 4, name: 'Dmitriy'},
                 {id: 5, name: 'John'}
             ]

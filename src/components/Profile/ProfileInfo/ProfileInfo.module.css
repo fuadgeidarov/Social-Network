@@ -3,7 +3,24 @@
 }
 
 .text {
-    font-size: 24px;
+    font-size: 20px;
     align-items: center;
-    color: #070707;
+    color: #792bb7;
+    margin-top: 30px;
+
+
+
+
+}
+
+.block {
+    width: 1480px;
+}
+
+.avatar{
+    margin-top: 30px;
+    margin-left: 10px;
+    width: 300px;
+    height:300px;
+    float: left;
 }

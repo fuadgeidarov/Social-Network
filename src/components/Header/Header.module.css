@@ -8,7 +8,40 @@
     margin-bottom: -30px;
 }
 .social {
-    text-align: center;
-    color: white ;
-    height: 10px;
+    text-align:left;
+    margin:15px;
+    color: #f3f3f3;
+    font-size: 30px;
+
+
+
+}
+.loginBlock {
+    float: right;
+    margin-top: -50px;
+    margin-right: 10px;
+
+
+}
+.login{
+    color: aliceblue;
+
+    font-size: 20px;
+
+}
+.login:hover{
+    color: aqua;
+}
+.log {
+    color: wheat;
+    font-family: "Arial Rounded MT Bold";
+}
+.btn {
+    font-family: "Arial Black" ;
+}
+
+.logo {
+    display: flex;
+    justify-content: left;
+    float: left;
 }
